@@ -51,7 +51,7 @@ function result() {
     newMessage = newMessage.replace(":insertx:", xItem);
     var output = document.getElementById("display_here");
     output.innerHTML = "";
-    var img = '<img src=kcsigurdson.com/uclax_wcib_week_5_part_2/images/:car:.png>';
+    var img = '<img src=http://kcsigurdson.com/uclax_wcib_week_5_part_2/images/:car:.png>';
     img = img.replace(":car:", car);
     output.innerHTML= img;
   }
