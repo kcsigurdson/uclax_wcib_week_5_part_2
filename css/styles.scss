@@ -1,0 +1,73 @@
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body{
+
+  h1 {
+    color: #e85a4f;
+  }
+  h2 {
+    color: #e98074;
+  }
+  background-color: #eae7dc;
+
+  label {
+    font-size: 16px;
+    padding-top: 2px;
+  }
+
+  input[type='radio'] {
+    transform: scale(1.5);
+  }
+
+  .radioButtonPadding{
+    padding-right: 6px;
+    padding-left: 10px;
+  }
+
+  .randomize {
+    width: 33.3%;
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: #e85a4f;
+    border-color: #e85a4f;
+  }
+
+  .centered {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.card-body {
+  background-color: #f5f5f5;
+  border-color: #d8c3a5;
+
+}
+
+.card-header{
+  background-color: #d8c3a5;
+  color: #3d3d3d;
+}

@@ -12,15 +12,78 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
   </head>
 
   <body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+      <h5 class="my-0 mr-md-auto font-weight-normal">Week 5, Part 2</h5>
+      <nav class="my-2 my-md-0 mr-md-3">
+      </nav>
+    </div>
 
-    <h1>Week 5, Part 2</h1>
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">Make a Silly Story</h1>
+      <p class="lead">Generate your silly story by completeing the steps below. Once you have made all of your selections and inputs click the "Generate" button to see your results.</p>
+    </div>
 
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">step 1</h4>
+          </div>
+          <div class="card-body">
+            <label for="customname">Enter custom name:</label>
+            <input id="customname" type="text" placeholder="">
+
+            <label for="customemotion">Enter an emotion:</label>
+            <input id="customemotion" type="text" placeholder="">
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">step 2</h4>
+          </div>
+          <div class="card-body">
+            <label class="radioButtonPadding" for="us">US </label><input id="us" type="radio" name="ukusmet" value="us" checked>
+            <label class="radioButtonPadding" for="uk">UK </label><input id="uk" type="radio" name="ukusmet" value="uk">
+            <label class="radioButtonPadding" for="uk">Metric </label><input id="metric" type="radio" name="ukusmet" value="metric">
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">step 3</h4>
+          </div>
+          <div class="card-body">
+            <label for="customcars">Choose a car:</label>
+            <select id="customcar">
+              <option value="Volvo">Volvo</option>
+              <option value="BMW">BMW</option>
+              <option value="Tesla">Tesla</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Honda">Honda</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="centered">
+        <button class="randomize">Generate</button>
+      </div>
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <h2>your story:</h2>
+        <div>
+          <p class="story"></p>
+          <p class="message"></p>
+        </div>
+        <div id="display_here"></div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 	</body>
 
 </html>
